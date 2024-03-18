@@ -40,7 +40,7 @@ public class Ex20 {
 				System.out.println("더 높게");
 			else {
 				System.out.println("맞았습니다.");
-				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
+				System.out.print("게임을 다시 하시겠습니까?(y/n) >>");
 				sc.nextLine();
 				String exitQuestion = sc.nextLine();
 				if (exitQuestion.equals("y") || exitQuestion.equals("Y")) {
@@ -48,8 +48,12 @@ public class Ex20 {
 					if (val < 0)
 						val *= -1;
 				}
-				else if (exitQuestion.equals("n") || exitQuestion.equals("N"))
+				else if (exitQuestion.equals("n") || exitQuestion.equals("N")) {
 					flag = false;
+					System.out.println("===============================");
+					System.out.println("       [숫자맞추기게임 종료]");
+					System.out.println("===============================");					
+				}
 
 			}
 			
